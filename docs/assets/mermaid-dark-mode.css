@@ -1,0 +1,85 @@
+/* Mermaid Dark Mode Support for Material Theme */
+
+/* Base styling */
+.mermaid {
+  background: transparent;
+}
+
+.mermaid svg {
+  background-color: transparent;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dark mode (slate) styling - Enhanced contrast for readability */
+[data-md-color-scheme="slate"] .mermaid {
+  filter: brightness(1.1) contrast(1.2);
+}
+
+/* Text labels - ensure high contrast in dark mode */
+[data-md-color-scheme="slate"] .mermaid .nodeLabel,
+[data-md-color-scheme="slate"] .mermaid .edgeLabel,
+[data-md-color-scheme="slate"] .mermaid .cluster-label text,
+[data-md-color-scheme="slate"] .mermaid .label text {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* Node backgrounds in dark mode - darker with visible borders */
+[data-md-color-scheme="slate"] .mermaid .node rect,
+[data-md-color-scheme="slate"] .mermaid .node circle,
+[data-md-color-scheme="slate"] .mermaid .node ellipse,
+[data-md-color-scheme="slate"] .mermaid .node polygon {
+  stroke-width: 2px !important;
+}
+
+/* Override class styles for dark mode - ensure text is white */
+[data-md-color-scheme="slate"] .mermaid .node.primary .nodeLabel,
+[data-md-color-scheme="slate"] .mermaid .node.secondary .nodeLabel,
+[data-md-color-scheme="slate"] .mermaid .node.success .nodeLabel {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Edge/arrow colors in dark mode - lighter for visibility */
+[data-md-color-scheme="slate"] .mermaid .edgePath .path {
+  stroke: #94a3b8 !important;
+  stroke-width: 2px !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .arrowheadPath {
+  fill: #94a3b8 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .edge-thickness-normal {
+  stroke-width: 2px !important;
+}
+
+/* Light mode styling (default) - ensure good contrast */
+[data-md-color-scheme="default"] .mermaid .nodeLabel,
+[data-md-color-scheme="default"] .mermaid .edgeLabel,
+[data-md-color-scheme="default"] .mermaid .cluster-label text,
+[data-md-color-scheme="default"] .mermaid .label text {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* Light mode - nodes with colored backgrounds, white text */
+[data-md-color-scheme="default"] .mermaid .node rect,
+[data-md-color-scheme="default"] .mermaid .node circle,
+[data-md-color-scheme="default"] .mermaid .node ellipse,
+[data-md-color-scheme="default"] .mermaid .node polygon {
+  stroke-width: 2px !important;
+}
+
+/* Light mode edges */
+[data-md-color-scheme="default"] .mermaid .edgePath .path {
+  stroke: #64748b !important;
+  stroke-width: 2px !important;
+}
+
+[data-md-color-scheme="default"] .mermaid .arrowheadPath {
+  fill: #64748b !important;
+}

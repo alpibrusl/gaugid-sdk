@@ -1,0 +1,26 @@
+# Development dependencies with local a2p SDK
+# Use this file when developing with local a2p SDK from ../a2p
+
+# Install local a2p SDK first:
+# cd ../a2p/packages/sdk-python && pip install -e .
+# or
+# pip install -e ../a2p/packages/sdk-python
+
+# Then install gaugid SDK:
+# pip install -e .
+
+# Core dependencies (a2p-sdk installed from local path)
+httpx>=0.25.0
+pydantic>=2.0.0
+cryptography>=41.0.0
+
+# Dev dependencies
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0
+mypy>=1.8.0
+ruff>=0.1.0
+black>=24.0.0
+pre-commit>=3.6.0
+types-requests>=2.31.0

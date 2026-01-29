@@ -1,0 +1,53 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# MkDocs
+site/
+
+# Environment
+.env
+.env.local
+
+# Python (gaugid-sdk-python)
+gaugid-sdk-python/.venv
+gaugid-sdk-python/__pycache__/
+gaugid-sdk-python/build/
+gaugid-sdk-python/dist/
+gaugid-sdk-python/*.egg-info/
+gaugid-sdk-python/.pytest_cache/
+gaugid-sdk-python/.coverage
+gaugid-sdk-python/htmlcov/
+gaugid-sdk-python/coverage.xml
+gaugid-sdk-python/coverage.json
+gaugid-sdk-python/.mypy_cache/
+gaugid-sdk-python/.ruff_cache/
+gaugid-sdk-python/bandit-report.json
+
+# Erroneous pip artifacts (prevent =x.y.z files)
+=*
+
+# TypeScript (gaugid-sdk-typescript)
+gaugid-sdk-typescript/node_modules/
+gaugid-sdk-typescript/dist/
+gaugid-sdk-typescript/.turbo/
+
+# Jupyter
+examples/notebooks/.ipynb_checkpoints/
+examples/frameworks/.ipynb_checkpoints/
+
+# Internal / local (never commit; see docs/INTERNAL_CONTENT_POLICY.md)
+.internal-docs/
+**/.internal-docs/
+*internal*.local
+*.secrets
+*.credentials
+tokens.json
+**/tokens.json

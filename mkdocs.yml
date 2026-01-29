@@ -1,0 +1,127 @@
+site_name: Gaugid SDK
+site_url: https://docs.gaugid.com
+site_description: Python SDK for integrating with Gaugid (a2p-cloud) service
+site_author: Gaugid SDK Team
+
+repo_name: alpibrusl/gaugid-sdk
+repo_url: https://github.com/alpibrusl/gaugid-sdk
+
+docs_dir: docs
+site_dir: site
+
+copyright: Copyright &copy; 2026 Gaugid SDK Contributors. Licensed under EUPL-1.2.
+
+theme:
+  name: material
+  # logo: assets/logo.svg        # TODO: add logo
+  # favicon: assets/favicon.svg  # TODO: add favicon
+  
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  
+  font:
+    text: Inter
+    code: JetBrains Mono
+  
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alpibrusl/gaugid-sdk
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/gaugid
+  
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+  - assets/mermaid-init.js
+
+extra_css:
+  - assets/mermaid-dark-mode.css
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+nav:
+  - Home: index.md
+  
+  - Tutorials:
+    - Overview: tutorials/overview.md
+    - Framework Integration:
+      - LangChain: tutorials/frameworks/langchain.md
+      - LangGraph: tutorials/frameworks/langgraph.md
+      - OpenAI Assistants: tutorials/frameworks/openai-assistants.md
+      - Anthropic Claude: tutorials/frameworks/anthropic.md
+      - Google Gemini: tutorials/frameworks/gemini.md
+      - Google ADK: tutorials/frameworks/google-adk.md
+      - CrewAI: tutorials/frameworks/crewai.md
+  
+  - Guides:
+    - Protocol Compliance: guides/protocol-compliance.md
+  
+  - SDK Integration: gaugid-sdk-integration.md
+  
+  - Proposals:
+    - Overview: proposals/README.md
+    - Memory Types: proposals/memory-types-protocol-extension.md
+    - Implementation Status: proposals/IMPLEMENTATION_STATUS.md
+    - Changelog: proposals/CHANGELOG.md
+  
+  - Project:
+    - Versioning: VERSIONING.md
+    - Open Source Checklist: OPEN_SOURCE_CHECKLIST.md
+    - Internal Content Policy: INTERNAL_CONTENT_POLICY.md

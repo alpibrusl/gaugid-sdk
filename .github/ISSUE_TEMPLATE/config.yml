@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://docs.gaugid.com
+    about: Gaugid SDK docs
+  - name: Discussions
+    url: https://github.com/alpibrusl/gaugid-sdk/discussions
+    about: Questions and ideas

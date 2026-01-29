@@ -1,0 +1,57 @@
+[project]
+name = "gaugid-sdk-examples"
+version = "0.1.0"
+description = "Example dependencies for Gaugid SDK framework integrations"
+requires-python = ">=3.10"
+dependencies = [
+    "gaugid>=0.1.0",
+]
+
+[project.optional-dependencies]
+langchain = [
+    "langchain>=0.3.0",
+    "langchain-openai>=0.2.0",
+]
+
+langgraph = [
+    "langgraph>=0.2.0",
+    "langchain-openai>=0.2.0",
+]
+
+openai = [
+    "openai>=1.50.0",
+]
+
+anthropic = [
+    "anthropic>=0.75.0",
+]
+
+gemini = [
+    "google-generativeai>=0.8.0",
+]
+
+google-adk = [
+    "google-adk>=0.1.0",
+    "google-generativeai>=0.8.0",
+]
+
+crewai = [
+    "crewai>=0.80.0",
+    "crewai-tools>=0.15.0",
+]
+
+all = [
+    "langchain>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langgraph>=0.2.0",
+    "openai>=1.50.0",
+    "anthropic>=0.75.0",
+    "google-generativeai>=0.8.0",
+    "google-adk>=0.1.0",
+    "crewai>=0.80.0",
+    "crewai-tools>=0.15.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

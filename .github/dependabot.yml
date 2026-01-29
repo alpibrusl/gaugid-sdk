@@ -1,0 +1,39 @@
+# Dependabot: keep dependencies up to date
+# https://docs.github.com/en/code-security/dependabot
+version: 2
+updates:
+  # Python (gaugid-sdk-python)
+  - package-ecosystem: "pip"
+    directory: "/gaugid-sdk-python"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "python"
+    commit-message:
+      prefix: "deps(python)"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "ci"
+    commit-message:
+      prefix: "ci"
+
+  # npm (gaugid-sdk-typescript) - uncomment when package is published
+  # - package-ecosystem: "npm"
+  #   directory: "/gaugid-sdk-typescript"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 5
+  #   labels:
+  #     - "dependencies"
+  #     - "typescript"
+  #   commit-message:
+  #     prefix: "deps(ts)"

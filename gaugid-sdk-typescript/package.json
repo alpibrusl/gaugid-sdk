@@ -1,0 +1,97 @@
+{
+  "name": "@gaugid/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for Gaugid (a2p-cloud) service integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "gaugid",
+    "a2p",
+    "ai",
+    "agent",
+    "profile",
+    "oauth",
+    "sdk",
+    "typescript"
+  ],
+  "author": "Gaugid SDK Team",
+  "license": "EUPL-1.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alpibrusl/gaugid-sdk.git",
+    "directory": "gaugid-sdk-typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/alpibrusl/gaugid-sdk/issues"
+  },
+  "homepage": "https://gaugid.com",
+  "documentation": "https://docs.gaugid.com",
+  "funding": {
+    "url": "https://gaugid.com"
+  },
+  "dependencies": {
+    "@a2p/sdk": "^0.1.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@langchain/langgraph": "^1.0.6",
+    "@google-cloud/adk": "^1.22.0",
+    "@anthropic-ai/sdk": "^0.75.0",
+    "@openai/agents": "^1.0.0",
+    "llama-index": "^0.14.12",
+    "agno": "^2.3.26",
+    "crewai": "^1.8.0"
+  },
+  "peerDependenciesMeta": {
+    "@langchain/langgraph": {
+      "optional": true
+    },
+    "@google-cloud/adk": {
+      "optional": true
+    },
+    "@anthropic-ai/sdk": {
+      "optional": true
+    },
+    "@openai/agents": {
+      "optional": true
+    },
+    "llama-index": {
+      "optional": true
+    },
+    "agno": {
+      "optional": true
+    },
+    "crewai": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
