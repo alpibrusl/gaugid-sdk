@@ -34,13 +34,6 @@ classifiers = [
     "Typing :: Typed",
 ]
 
-[project.urls]
-Homepage = "https://gaugid.com"
-Documentation = "https://docs.gaugid.com"
-Repository = "https://github.com/alpibrusl/gaugid-sdk"
-"Source (Python)" = "https://github.com/alpibrusl/gaugid-sdk/tree/main/gaugid-sdk-python"
-Changelog = "https://github.com/alpibrusl/gaugid-sdk/blob/main/CHANGELOG.md"
-
 dependencies = [
     "a2p-sdk>=0.1.1",
     "httpx>=0.25.0",
@@ -101,6 +94,8 @@ all = [
 Homepage = "https://gaugid.com"
 Documentation = "https://docs.gaugid.com"
 Repository = "https://github.com/alpibrusl/gaugid-sdk"
+"Source (Python)" = "https://github.com/alpibrusl/gaugid-sdk/tree/main/gaugid-sdk-python"
+Changelog = "https://github.com/alpibrusl/gaugid-sdk/blob/main/CHANGELOG.md"
 Issues = "https://github.com/alpibrusl/gaugid-sdk/issues"
 
 [tool.hatch.build.targets.wheel]
